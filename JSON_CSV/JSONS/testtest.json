@@ -1,0 +1,17 @@
+﻿{
+    "objects": [
+        {
+            "WhoTalk": "Player",
+            "Line_Rus": "Test Line_Rus",
+            "Line_Eng": "Test Line_Eng",
+            "Tags": "enter"
+        },
+        {
+            "WhoTalk": "NotPlayer",
+            "Line_Esp": "Test Line_Rus",
+            "Line_Ukr": "Test Line_Eng",
+            "OnEnd": "Test OnEnd",
+            "Expressions": "Test Expressions"
+        }
+    ]
+}
