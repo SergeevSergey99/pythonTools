@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 import pandas as pd
 
-def JSONS_TO_CSV():
+def JSONS_TO_CSV_and_XLSX():
 	for file in Path("JSONS").glob('*.json'):
 		with open("JSONS/" + file.name, encoding='utf-8-sig') as json_file:
 			jsondata = json.load(json_file)['objects']
@@ -45,7 +45,7 @@ def JSONS_TO_CSV():
 		df_new.to_excel(GFG, sheet_name="objects", index=False)
 		GFG.save()
 
-def XLSX_TO_JSONS():
+def XLSX_TO_JSONS_and_CSV():
 	for file in Path("XLSX").glob('*.xlsx'):
 
 		print(file.name)
@@ -80,4 +80,4 @@ def XLSX_TO_JSONS():
 		with open("JSONS/" + file.name[:-5]+".json", "w", encoding="utf-8") as outfile:
 			outfile.write(json_object)
 
-XLSX_TO_JSONS()
+XLSX_TO_JSONS_and_CSV()
