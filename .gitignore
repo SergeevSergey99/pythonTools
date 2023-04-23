@@ -4,3 +4,7 @@ YouTubeInfo/SECRET.txt
 *.xlsx
 *.csv
 JSON_CSV/JSONS
+dist
+GG_gifs
+build
+*.spec
