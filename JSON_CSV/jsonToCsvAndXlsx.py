@@ -20,7 +20,7 @@ def JSONS_TO_CSV_and_XLSX():
 		count = 0
 		for data in jsondata:
 			if count == 0:
-				header = ["WhoTalk", "Line_Rus", "Line_Eng", "Line_Esp", "Line_Ukr", "Line_Deu", "Line_Pl", "Tags", "Expressions", "OnEnd"]
+				header = ["WhoTalk", "Line_Rus", "Line_Eng", "Line_Fra", "Line_Esp", "Line_Deu", "Line_Ukr", "Line_Pol", "Line_Jpn", "Tags", "Expressions", "OnEnd"]
 				csv_writer.writerow(header)
 				count += 1
 
